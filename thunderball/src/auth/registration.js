@@ -1,5 +1,4 @@
 import React from "react";
-// import { axiosWithAuth } from "./axiosWithAuth";
 import axios from 'axios'
 import {Link} from 'react-router-dom';
 

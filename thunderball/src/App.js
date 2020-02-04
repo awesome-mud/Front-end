@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import Register from './auth/registration'
 import Login from './auth/login'
 import PrivateRoute from './auth/PrivateRoute'
+import Initialize from './components/initialize'
+import Move from './components/move'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
     <div className="App">
       <Register/>
       <Login/>
+      <Initialize/>
+      <Move/>
       
     </div>
     </Router>
