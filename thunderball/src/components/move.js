@@ -1,19 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext} from 'react';
+import PlayerContext from '../context/Player/PlayerContext'
 import { axiosWithAuth } from '../auth/axiosWithAuth';
 
 function Move() {
-    const [newRoom, setNewRoom] = useState([])
-
-    function changeDirection(dir){
-        axiosWithAuth()
-        .post("/adv/move/", {direction: dir})
-        .then(res => {
-            console.log("direction:", dir)
-            console.log(res)
-        })
-    }
-
     
+const {changeDirection} = useContext(PlayerContext)
+
 
     return (
         <div>
