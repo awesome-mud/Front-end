@@ -22,6 +22,7 @@ class Register extends React.Component {
           [e.target.name]: e.target.value
         }
       });
+      
     };
   
     login = e => {
