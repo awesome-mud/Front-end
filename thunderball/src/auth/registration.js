@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios'
 import {Link} from 'react-router-dom';
+import '../css/Registration.css';
 
 class Register extends React.Component {
     state = {
@@ -43,8 +44,8 @@ class Register extends React.Component {
     render() {
       return (
         
-        <div>
-          <form onSubmit={this.login}>
+        <div className="wrapperDiv">
+          <form className="formDiv" onSubmit={this.login}>
             <input
               type="text"
               name="username"
@@ -76,6 +77,10 @@ class Register extends React.Component {
        <button>Register</button>
           </form>
          
+        <div className="logWrap">
+          <p>Already have an account?</p>
+          <Link to={"/login"}><button>Log in</button></Link>
+        </div>
         </div>
          
       

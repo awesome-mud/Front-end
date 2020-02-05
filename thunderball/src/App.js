@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import logo from './logo.svg';
 import Register from './auth/registration'
 import Login from './auth/login'
@@ -14,10 +14,10 @@ function App() {
     <PlayerProvider>
     <div className="App">
       
-      <Register/>
-      <Login/>
-      <Initialize/>
-      <Move/>
+      <Route exact path ="/" component = {Register} />
+      <Route path ="/login" component = {Login} />      
+      {/* <Initialize/>
+      <Move/> */}
       
     </div>
     </PlayerProvider>

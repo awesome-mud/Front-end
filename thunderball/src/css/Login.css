@@ -1,0 +1,54 @@
+.wrapperDiv{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    background-image: url("../images/newLightning.jpg");
+}
+.wholeForm{
+    border:3px solid rgb(253, 168, 236);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(253, 168, 236), 0 0 20px rgb(253, 168, 236), 0 0 25px rgb(253, 168, 236), 0 0 30px rgb(253, 168, 236), 0 0 35px rgb(253, 168, 236);
+    /* box-shadow: 0px 0px 10px rgb(247, 209, 240); */
+    animation: glow 1s ease-in-out infinite alternate;
+    border-radius: 3px;
+    padding:75px 50px;
+}
+@keyframes glow {
+    from {
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(63, 39, 58), 0 0 20px rgb(63, 39, 58), 0 0 25px rgb(63, 39, 58), 0 0 30px rgb(63, 39, 58), 0 0 35px rgb(63, 39, 58);
+    }
+    to {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(63, 39, 58), 0 0 40px rgb(63, 39, 58), 0 0 50px rgb(63, 39, 58), 0 0 60px rgb(63, 39, 58), 0 0 70px rgb(63, 39, 58);
+    }
+  }
+  
+.formDiv{
+    display:flex;
+    flex-direction:column;
+    width:30vw;
+}
+.formDiv button{
+    height:30px;
+    border-radius:3px;
+}
+.logWrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logWrap button{
+    width:30vw;
+    height:30px;
+    border-radius:3px;
+}
+
+.formDiv input{
+    border:3px solid rgb(253, 168, 236);
+    background: transparent;
+    border-radius:3px;
+    margin-bottom:20px;
+    height: 30px;
+    font-size:1.3rem;
+}

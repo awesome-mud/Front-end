@@ -2,6 +2,7 @@ import React from "react";
 // import { axiosWithAuth } from "./axiosWithAuth";
 import axios from 'axios'
 import {Link} from 'react-router-dom';
+import '../css/Login.css'
 
 
 class Login extends React.Component {
@@ -41,36 +42,36 @@ class Login extends React.Component {
   
     render() {
       return (
-        <div className="login-container">
-        <div className="login-form">
+        <div className="wrapperDiv">
+          <div className="wholeForm"> 
+            <form className= "formDiv" onSubmit={this.login}>
+              <input
+                type="text"
+                name="username"
+                placeholder="username"
+                value={this.state.credentials.username}
+                onChange={this.handleChange}
+              />
+                  {/* <input
+                type="email"
+                name="email"
+                placeholder="email"
+                value={this.state.credentials.email}
+                onChange={this.handleChange}
+              /> */}
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                value={this.state.credentials.password}
+                onChange={this.handleChange}
+              />
+            <button>Log in</button>
+            </form>
         
-          <div className="login-card">
-           
-          <form onSubmit={this.login}>
-            <input
-              type="text"
-              name="username"
-              placeholder="username"
-              value={this.state.credentials.username}
-              onChange={this.handleChange}
-            />
-                {/* <input
-              type="email"
-              name="email"
-              placeholder="email"
-              value={this.state.credentials.email}
-              onChange={this.handleChange}
-            /> */}
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              value={this.state.credentials.password}
-              onChange={this.handleChange}
-            />
-          <button>Log in</button>
-          </form>
-        
+          <div className= "logWrap">
+            <p>Need to sign up?</p>
+            <Link to={"/"}><button>Register</button></Link>
           </div>
         </div>
         </div>

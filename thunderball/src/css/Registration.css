@@ -1,0 +1,19 @@
+.wrapperDiv{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.formDiv{
+    display:flex;
+    flex-direction:column;
+}
+
+.logWrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
