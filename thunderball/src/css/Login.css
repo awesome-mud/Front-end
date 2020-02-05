@@ -1,14 +1,22 @@
+body{
+ background-image: url("../images/lightning.jpg");
+
+}
+
+
 .wrapperDiv{
     height:100vh;
     display:flex;
     justify-content:center;
     align-items: center;
     flex-direction:column;
-    background-image: url("../images/newLightning.jpg");
+   
+    
+    z-index: 2;
 }
 .wholeForm{
-    border:3px solid rgb(253, 168, 236);
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(253, 168, 236), 0 0 20px rgb(253, 168, 236), 0 0 25px rgb(253, 168, 236), 0 0 30px rgb(253, 168, 236), 0 0 35px rgb(253, 168, 236);
+    border:3px solid rgb(247, 229, 243);
+    box-shadow: 0 0 5px rgb(236, 203, 234), 0 0 10px rgb(223, 193, 223), 0 0 15px rgb(253, 168, 236), 0 0 20px rgb(253, 168, 236), 0 0 25px rgb(253, 168, 236), 0 0 30px rgb(253, 168, 236), 0 0 35px rgb(253, 168, 236);
     /* box-shadow: 0px 0px 10px rgb(247, 209, 240); */
     animation: glow 1s ease-in-out infinite alternate;
     border-radius: 3px;
@@ -16,10 +24,10 @@
 }
 @keyframes glow {
     from {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(63, 39, 58), 0 0 20px rgb(63, 39, 58), 0 0 25px rgb(63, 39, 58), 0 0 30px rgb(63, 39, 58), 0 0 35px rgb(63, 39, 58);
+      box-shadow: 0 0 5px rgb(216, 190, 212), 0 0 10px rgb(173, 141, 169), 0 0 15px rgb(63, 39, 58), 0 0 20px rgb(63, 39, 58), 0 0 25px rgb(63, 39, 58), 0 0 30px rgb(63, 39, 58), 0 0 35px rgb(63, 39, 58);
     }
     to {
-      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(63, 39, 58), 0 0 40px rgb(63, 39, 58), 0 0 50px rgb(63, 39, 58), 0 0 60px rgb(63, 39, 58), 0 0 70px rgb(63, 39, 58);
+      box-shadow: 0 0 10px rgb(215, 174, 219), 0 0 20px rgb(222, 175, 228), 0 0 30px rgb(63, 39, 58), 0 0 40px rgb(63, 39, 58), 0 0 50px rgb(63, 39, 58), 0 0 60px rgb(63, 39, 58), 0 0 70px rgb(63, 39, 58);
     }
   }
   
@@ -27,10 +35,15 @@
     display:flex;
     flex-direction:column;
     width:30vw;
+    
 }
 .formDiv button{
     height:30px;
-    border-radius:3px;
+    background-color: transparent;
+    color:rgb(253, 168, 236);
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 1.2rem;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 .logWrap{
     display:flex;
@@ -40,7 +53,11 @@
 }
 .logWrap p{
     color:white;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+}
+.logWrap a{
+    text-decoration: none;
+    color: rgb(253, 168, 236)
 }
 .logWrap button{
     /* width:30vw; */
@@ -52,9 +69,10 @@
 
 .formDiv input{
     border:3px solid rgb(253, 168, 236);
-    background: transparent;
     border-radius:3px;
     margin-bottom:20px;
     height: 30px;
     font-size:1.3rem;
+    
+    
 }
