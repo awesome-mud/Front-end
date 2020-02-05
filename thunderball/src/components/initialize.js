@@ -1,18 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { axiosWithAuth } from "../auth/axiosWithAuth";
-
+import PlayerContext from '../context/Player/PlayerContext'
 
 function Initialize() {
-    const [player, setPlayer] = useState([])
-    useEffect(()=>{
-    axiosWithAuth()
-    .get('/adv/init/')
-    .then(res => {
-        console.log('player response:', res)
-        setPlayer(res.data)
-    })
-    .catch(err => console.log(err))
-    },[])
+    const {player, setPlayer} = useContext(PlayerContext)
+   
 
     return (
         <div>

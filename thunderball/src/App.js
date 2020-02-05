@@ -7,7 +7,7 @@ import PrivateRoute from './auth/PrivateRoute'
 import Initialize from './components/initialize'
 import PlayerProvider from './context/Player/PlayerProvider'
 import Move from './components/move'
-
+import MainPage from './view/mainPage'
 function App() {
   return (
     <Router>
@@ -16,8 +16,7 @@ function App() {
       
       <Route exact path ="/" component = {Register} />
       <Route path ="/login" component = {Login} />      
-      {/* <Initialize/>
-      <Move/> */}
+      <PrivateRoute path ="/ThunderBall" component={MainPage}/>
       
     </div>
     </PlayerProvider>
