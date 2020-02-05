@@ -70,8 +70,7 @@ class Login extends React.Component {
             </form>
         
           <div className= "logWrap">
-            <p>Need to sign up?</p>
-            <Link to={"/"}><button>Register</button></Link>
+            <p>Need to sign up? <Link to={"/"}>Register</Link></p>
           </div>
         </div>
         </div>
