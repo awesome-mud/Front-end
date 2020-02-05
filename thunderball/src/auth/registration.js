@@ -45,41 +45,42 @@ class Register extends React.Component {
       return (
         
         <div className="wrapperDiv">
-          <form className="formDiv" onSubmit={this.login}>
-            <input
-              type="text"
-              name="username"
-              placeholder="username"
-              value={this.state.credentials.username}
-              onChange={this.handleChange}
-            />
-            {/* <input
-              type="email"
-              name="Email"
-              placeholder="email"
-              value={this.state.credentials.Email}
-              onChange={this.handleChange}
-            /> */}
-            <input
-              type="password"
-              name="password1"
-              placeholder="password"
-              value={this.state.credentials.password1}
-              onChange={this.handleChange}
-            />
-            <input
-              type="password"
-              name="password2"
-              placeholder="confirm password"
-              value={this.state.credentials.password2}
-              onChange={this.handleChange}
-            />
-       <button>Register</button>
-          </form>
-         
-        <div className="logWrap">
-          <p>Already have an account?</p>
-          <Link to={"/login"}><button>Log in</button></Link>
+          <div className="wholeForm">
+            <form className="formDiv" onSubmit={this.login}>
+              <input
+                type="text"
+                name="username"
+                placeholder="username"
+                value={this.state.credentials.username}
+                onChange={this.handleChange}
+              />
+              {/* <input
+                type="email"
+                name="Email"
+                placeholder="email"
+                value={this.state.credentials.Email}
+                onChange={this.handleChange}
+              /> */}
+              <input
+                type="password"
+                name="password1"
+                placeholder="password"
+                value={this.state.credentials.password1}
+                onChange={this.handleChange}
+              />
+              <input
+                type="password"
+                name="password2"
+                placeholder="confirm password"
+                value={this.state.credentials.password2}
+                onChange={this.handleChange}
+              />
+        <button>Register</button>
+            </form>
+          
+          <div className="logWrap">
+            <p>Already have an account? <Link to={"/login"}>Log in</Link></p>
+          </div>
         </div>
         </div>
          

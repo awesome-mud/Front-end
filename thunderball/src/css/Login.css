@@ -35,12 +35,18 @@
 .logWrap{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
+.logWrap p{
+    color:white;
+    font-size: 0.5rem;
+}
 .logWrap button{
-    width:30vw;
-    height:30px;
+    /* width:30vw; */
+    /* height:30px; */
+    height:20px;
+    width:14vw;
     border-radius:3px;
 }
 
