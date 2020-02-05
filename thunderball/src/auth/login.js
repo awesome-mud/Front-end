@@ -32,8 +32,7 @@ class Login extends React.Component {
         .post('https://lambda-mud-ty.herokuapp.com/api/login/', this.state.credentials)
         .then(res => {
           localStorage.setItem('token', res.data.key);
-          
-        //   this.props.history.push('/protected');
+          this.props.history.push('/ThunderBall');
           this.setState({ loading: false });
         })
         .catch(err => console.log(err));
