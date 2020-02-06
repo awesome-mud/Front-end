@@ -11,8 +11,9 @@ function Initialize() {
             <p><b>Driver:</b> {player.name}</p>
             <p><b>Location:</b> {player.title}</p>
             <p><b>GPS:</b> {player.description}</p>
+            <p><b>Traffic: </b></p>
             {player.players && player.players.map((item)=>{
-               return <p><b>Traffic: </b>{item}</p>
+               return <p>{item}</p>
            })} 
 
         </div>

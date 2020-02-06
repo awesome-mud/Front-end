@@ -3,6 +3,7 @@ import React from "react";
 import axios from 'axios'
 import {Link} from 'react-router-dom';
 import '../css/Login.css'
+import Logo from '../images/logo.png'
 
 
 class Login extends React.Component {
@@ -42,6 +43,7 @@ class Login extends React.Component {
     render() {
       return (
         <div className="wrapperDiv">
+          <img src={Logo} alt='logo'  className='logoLogin'/>
           <div className="wholeForm"> 
             <form className= "formDiv" onSubmit={this.login}>
               <input
