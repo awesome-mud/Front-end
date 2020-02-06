@@ -45,9 +45,10 @@ body{
     background-color: transparent;
     color:rgb(253, 168, 236);
     border: 3px solid rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1rem;
     animation: glow 1s ease-in-out infinite alternate;
     cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
 }
 .logWrap{
     display:flex;

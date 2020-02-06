@@ -37,8 +37,8 @@
         padding: 15px;
         background: rgba(0, 0, 0, 0.5);
         color: rgb(216, 190, 212);
-        font-size: large;
-        width: 60%;
+        font-size: 18px;
+        width: 600px;
         height: 25%;
         overflow: hidden;
     }
@@ -51,7 +51,7 @@
         border-radius: 3px;
         padding: 15px;
         background: rgba(0, 0, 0, 0.5);
-        width: 60%;
+        width: 600px;
         margin-top: 12px;
     }
 
@@ -88,6 +88,7 @@
         padding:40px 40px 110px 40px;
         background: rgba(0, 0, 0, 0.5);
         height: 55%;
+        margin-left: 55px;
     }
 
     .mapCanvas{
@@ -95,7 +96,7 @@
     }
 
     .wheel{
-        width: 40%;
+        width: 160px;
     }
 
     .logo{
