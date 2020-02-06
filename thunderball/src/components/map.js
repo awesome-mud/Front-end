@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import PlayerContext from '../context/Player/PlayerContext'
-
+import '../css/Main.css'
+import Test from '../images/testmap.png'
 
 const Map = () => {
     // const {map, setMap} = useContext(PlayerContext)
@@ -19,8 +20,8 @@ const Map = () => {
     // }
 
 return (
-    <div>
-      
+    <div className='mapDiv'>
+        <img src={Test} />
     </div>
 )
 
