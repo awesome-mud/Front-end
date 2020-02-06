@@ -7,9 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   font-family: 'Press Start 2P', cursive;
+  cursor: url('./images/cursor.png'), auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

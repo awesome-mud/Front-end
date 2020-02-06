@@ -47,7 +47,7 @@ body{
     border: 3px solid rgb(255, 255, 255);
     font-size: 1rem;
     animation: glow 1s ease-in-out infinite alternate;
-    cursor: pointer;
+    cursor: url('../images/cursor2.png'), auto;
     font-family: 'Press Start 2P', cursive;
 }
 .logWrap{
@@ -62,7 +62,8 @@ body{
 }
 .logWrap a{
     text-decoration: none;
-    color: rgb(253, 168, 236)
+    color: rgb(253, 168, 236);
+    cursor: url('../images/cursor2.png'), auto;
 }
 .logWrap button{
     /* width:30vw; */
@@ -80,6 +81,7 @@ body{
     font-size:1.3rem;
     color: rgb(216, 190, 212);
     background: rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
 }
 
 .logoLogin{
