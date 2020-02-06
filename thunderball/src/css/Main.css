@@ -79,6 +79,10 @@
         justify-content: center;
     }
 
+    .upArrow, .downArrow, .rightArrow, .leftArrow{
+        cursor: url('../images/cursor2.png'), auto;
+    }
+
     .map{
         border:3px solid rgb(247, 229, 243);
         box-shadow: 0 0 5px rgb(236, 203, 234), 0 0 10px rgb(223, 193, 223), 0 0 15px rgb(253, 168, 236), 0 0 20px rgb(253, 168, 236), 0 0 25px rgb(253, 168, 236), 0 0 30px rgb(253, 168, 236), 0 0 35px rgb(253, 168, 236);
