@@ -11,7 +11,7 @@ const MainPage = () => {
     return (
         <div className='mainDiv'>
             <img src={Logo} alt='logo' className='logo'/>
-            <audio controls src={Song} volume='0.01'/>
+            <audio controls src={Song} autoplay='true'/>
             <div className='contentDiv'>
             <div className='leftDiv'>
             <div className='init'>
